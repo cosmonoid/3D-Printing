@@ -4,10 +4,10 @@ G28 Z ; Home Z first
 G29 L0 ; Load mesh #0
 G29 J ; UBL load mesh and tilt 3 points
 G28 XY ; Home XY, so the nozzle will stay outside the bed when heating up
-M140 S{material_bed_temperature} ; start heating the bed to what is set in Cura
-M104 S{material_print_temperature} T0 ; start heating T0 to what is set in Cura
-M190 S{material_bed_temperature} ; continue heating but wait till heated
-M109 S{material_print_temperature} T0 ; continue heating but wait till heated
+M140 S{material_bed_temperature_layer_0} ; start heating the bed to what is set in Cura
+M104 S{material_print_temperature_layer_0} T0 ; start heating T0 to what is set in Cura
+M190 S{material_bed_temperature_layer_0} ; continue heating but wait till heated
+M109 S{material_print_temperature_layer_0} T0 ; continue heating but wait till heated
 
 
 ;G29 ; Create new mesh
